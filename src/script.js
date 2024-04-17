@@ -26,10 +26,8 @@ document.addEventListener("keydown", function (event) {
 var recent_commands = []
 var back_index = 0
 
-
-function handle_input(event) {
-  console.log(event)
-  if (event.key === 'Enter') {
+function press_enter() {
+    
     var input = input_field.textContent.split(" ")
     var command = input[0]
     var args = input.slice(1)
@@ -39,6 +37,12 @@ function handle_input(event) {
     
 
     handle_command(command, args)
+}
+
+function handle_input(event) {
+  console.log(event)
+  if (event.key === 'Enter') {
+    press_enter()
   } else if (event.key === 'Backspace') {
     input_field.textContent = input_field.textContent.slice(0, -1)
   } else if (event.key === 'ArrowUp') {

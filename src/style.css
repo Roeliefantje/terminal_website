@@ -1,0 +1,14 @@
+* {
+  font-family: "BlexMono Nerd Font", monospace;
+  background-color: hsl(0, 0%, 14%);
+  color: hsl(0, 0%, 95%);
+}
+
+/* #content {
+  white-space: pre;
+} */
+
+span {
+  margin: 0px;
+  padding: 0px;
+}
